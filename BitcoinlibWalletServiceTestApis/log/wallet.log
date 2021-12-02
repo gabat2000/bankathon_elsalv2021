@@ -1,0 +1,1688 @@
+2021-11-27 19:49:27,437 INFO <<----------------------------------------------------->>
+2021-11-27 19:49:27,437 INFO  WALLET Log start 
+
+2021-11-27 19:50:11,283 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-27 19:50:11,284 INFO -----------[SEND][INICIANDO GET]-----------
+2021-11-27 19:50:11,285 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amonunt":1000
+
+}
+2021-11-27 19:50:11,285 INFO [MAIN][SEND][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amonunt":1000
+
+}
+2021-11-27 19:50:11,294 ERROR [MAIN][SEND][GENERAL] Error getting response , error: 'amount'
+2021-11-27 19:50:11,295 ERROR 'amount'
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 152, in txExecutionSend
+    address_destination, amount = w_request_dict['address_destination'], w_request_dict['amount']
+KeyError: 'amount'
+2021-11-27 19:52:38,025 INFO <<----------------------------------------------------->>
+2021-11-27 19:52:38,026 INFO  WALLET Log start 
+
+2021-11-27 19:52:56,128 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-27 19:52:56,129 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-27 19:52:56,129 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":1000
+
+}
+2021-11-27 19:52:56,130 INFO [MAIN][SEND][JSON]
+2021-11-27 19:52:56,281 INFO [MAIN][SEND] to get balance
+2021-11-27 19:53:16,486 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-27 19:53:16,486 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 162, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-27 19:53:16,492 INFO [MAIN][SEND][END JSON]
+2021-11-27 19:53:59,773 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-27 19:53:59,774 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-27 19:53:59,775 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-27 19:53:59,775 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-27 19:53:59,821 INFO [MAIN][BALANCE] to get balance
+2021-11-27 19:54:24,516 INFO [MAIN][BALANCE][END JSON]
+2021-11-27 20:04:20,499 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-27 20:04:20,500 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-27 20:04:20,502 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":1000
+
+}
+2021-11-27 20:04:20,502 INFO [MAIN][SEND][JSON]
+2021-11-27 20:04:20,557 INFO [MAIN][SEND] to get balance
+2021-11-27 20:05:01,127 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-27 20:05:01,128 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 162, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-27 20:05:01,129 INFO [MAIN][SEND][END JSON]
+2021-11-27 20:28:44,269 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-27 20:28:44,270 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-27 20:28:44,271 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":1000
+
+}
+2021-11-27 20:28:44,271 INFO [MAIN][SEND][JSON]
+2021-11-27 20:28:44,317 INFO [MAIN][SEND] to get balance
+2021-11-27 20:29:18,366 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-27 20:29:18,367 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 162, in txExecutionSend
+    except Exception as error:
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-27 20:29:18,391 INFO [MAIN][SEND][END JSON]
+2021-11-27 20:30:25,713 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-27 20:30:25,714 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-27 20:30:25,715 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-27 20:30:25,715 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-27 20:30:25,760 INFO [MAIN][BALANCE] to get balance
+2021-11-27 20:30:33,874 INFO [MAIN][BALANCE][END JSON]
+2021-11-27 20:41:56,680 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-27 20:41:56,682 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-27 20:41:56,682 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-27 20:41:56,683 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-27 20:41:56,740 INFO [MAIN][BALANCE] to get balance
+2021-11-27 20:42:34,050 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 09:59:11,023 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 09:59:11,032 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 09:59:11,035 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":1000
+
+}
+2021-11-28 09:59:11,036 INFO [MAIN][SEND][JSON]
+2021-11-28 09:59:11,168 INFO [MAIN][SEND] to get balance
+2021-11-28 09:59:28,027 INFO [FNT][CREATE WALLET][GUARDADA] 
+2021-11-28 10:03:24,695 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:03:24,696 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:03:24,697 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:03:24,697 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:03:24,735 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:04:16,516 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:05:38,066 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:05:38,067 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:05:38,067 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:05:38,068 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:05:38,413 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:06:03,720 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:13:22,533 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:13:22,534 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:13:22,534 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:13:22,535 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:13:22,581 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:13:34,447 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:13:53,976 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:13:53,977 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:13:53,978 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:13:53,978 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:13:54,018 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:14:08,804 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:14:50,753 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:14:50,755 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:14:50,755 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:14:50,756 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:14:50,804 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:15:31,450 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:16:52,442 INFO <<----------------------------------------------------->>
+2021-11-28 10:16:52,442 INFO  WALLET Log start 
+
+2021-11-28 10:17:31,892 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:17:31,893 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:17:31,894 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:17:31,895 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:17:32,168 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:18:13,575 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:26:06,742 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:26:06,743 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:26:06,744 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:26:06,744 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:26:06,791 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:26:30,601 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:33:39,130 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:33:39,131 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:33:39,132 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:33:39,132 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:33:39,179 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:33:44,141 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:33:58,943 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:33:58,944 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:33:58,945 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:33:58,945 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:33:58,987 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:34:03,979 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:40:24,099 INFO <<----------------------------------------------------->>
+2021-11-28 10:40:24,100 INFO  WALLET Log start 
+
+2021-11-28 10:40:26,196 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:40:26,197 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:40:26,198 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:40:26,198 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:40:26,364 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:40:50,213 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:44:50,499 INFO <<----------------------------------------------------->>
+2021-11-28 10:44:50,499 INFO  WALLET Log start 
+
+2021-11-28 10:44:56,442 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 10:44:56,443 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 10:44:56,443 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:44:56,444 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 10:44:56,558 INFO [MAIN][BALANCE] to get balance
+2021-11-28 10:45:44,719 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 10:48:50,371 INFO <<----------------------------------------------------->>
+2021-11-28 10:48:50,371 INFO  WALLET Log start 
+
+2021-11-28 19:27:25,173 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 19:27:25,177 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 19:27:25,178 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 19:27:25,179 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 19:27:25,346 INFO [MAIN][BALANCE] to get balance
+2021-11-28 19:27:52,773 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 19:45:49,337 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 19:45:49,338 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 19:45:49,338 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 19:45:49,339 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 19:45:49,384 INFO [MAIN][BALANCE] to get balance
+2021-11-28 19:46:13,489 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 19:47:34,633 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 19:47:34,634 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 19:47:34,635 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 19:47:34,636 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 19:47:34,678 INFO [MAIN][BALANCE] to get balance
+2021-11-28 19:47:59,471 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 20:14:30,562 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 20:14:30,564 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 20:14:30,565 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 20:14:30,565 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 20:14:30,610 INFO [MAIN][BALANCE] to get balance
+2021-11-28 20:14:37,215 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:24:55,029 INFO <<----------------------------------------------------->>
+2021-11-28 21:24:55,030 INFO  WALLET Log start 
+
+2021-11-28 21:25:31,716 INFO <<----------------------------------------------------->>
+2021-11-28 21:25:31,717 INFO  WALLET Log start 
+
+2021-11-28 21:30:21,821 INFO <<----------------------------------------------------->>
+2021-11-28 21:30:21,821 INFO  WALLET Log start 
+
+2021-11-28 21:30:42,286 INFO [MAIN][CREATE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:30:42,287 INFO  ------------------[CREATE][INICIANDO POST]-------------------- 
+
+2021-11-28 21:30:42,289 INFO [MAIN][CREATE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00005000
+
+}
+2021-11-28 21:30:42,291 INFO [MAIN][CREATE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00005000
+
+}
+2021-11-28 21:30:42,761 ERROR [FNT][CREATE WALLET CHAIN] Error creado billetera en cadena, error: Wallet with name 'walletTest7' already exists
+2021-11-28 21:30:42,762 ERROR Wallet with name 'walletTest7' already exists
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 200, in create_wallet_chain
+    w = Wallet.create(w_name, keys=passphrase, network=network)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 1261, in create
+    hdpm = cls._create(name, key, owner=owner, network=network, account_id=account_id, purpose=purpose,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 1005, in _create
+    raise WalletError("Wallet with name '%s' already exists" % name)
+bitcoinlib.wallets.WalletError: Wallet with name 'walletTest7' already exists
+2021-11-28 21:30:42,766 ERROR [FNT][CREATE WALLET] Error creado billetera, error: 'NoneType' object is not subscriptable
+2021-11-28 21:30:42,770 ERROR [MAIN][CREATE][GENERAL] Error getting response , error: 'NoneType' object is not subscriptable
+2021-11-28 21:30:42,771 ERROR 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 79, in txExecutionCreate
+    wallet_w_dict, numo_w = wallet_info[0], wallet_info[1]
+TypeError: 'NoneType' object is not subscriptable
+2021-11-28 21:31:35,041 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:31:35,042 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:31:35,043 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00005000
+
+}
+2021-11-28 21:31:35,044 INFO [MAIN][SEND][JSON]
+2021-11-28 21:31:35,097 INFO [MAIN][SEND] to get balance
+2021-11-28 21:32:00,212 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:32:00,212 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 21:32:00,213 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:32:00,214 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:32:00,260 INFO [MAIN][BALANCE] to get balance
+2021-11-28 21:32:03,779 INFO [FNT][CREATE WALLET][GUARDADA] 
+2021-11-28 21:32:15,806 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:37:38,388 INFO <<----------------------------------------------------->>
+2021-11-28 21:37:38,389 INFO  WALLET Log start 
+
+2021-11-28 21:38:36,293 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:38:36,295 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 21:38:36,296 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:38:36,297 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:38:36,449 INFO [MAIN][BALANCE] to get balance
+2021-11-28 21:38:41,599 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:41:11,529 INFO <<----------------------------------------------------->>
+2021-11-28 21:41:11,529 INFO  WALLET Log start 
+
+2021-11-28 21:41:15,530 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:41:15,531 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 21:41:15,532 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:41:15,533 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:41:15,683 INFO [MAIN][BALANCE] to get balance
+2021-11-28 21:41:42,006 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:42:05,409 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:42:05,410 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 21:42:05,411 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:42:05,411 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:42:05,454 INFO [MAIN][BALANCE] to get balance
+2021-11-28 21:42:10,242 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:42:22,035 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:42:22,036 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 21:42:22,037 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:42:22,037 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:42:22,081 INFO [MAIN][BALANCE] to get balance
+2021-11-28 21:42:40,843 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:42:46,548 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:42:46,549 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 21:42:46,550 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:42:46,550 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:42:46,595 INFO [MAIN][BALANCE] to get balance
+2021-11-28 21:42:50,742 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:43:40,414 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:43:40,415 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:43:40,415 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 21:43:40,416 INFO [MAIN][SEND][JSON]
+2021-11-28 21:43:40,458 INFO [MAIN][SEND] to get balance
+2021-11-28 21:44:14,974 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:44:14,975 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 161, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:44:14,999 INFO [MAIN][SEND][END JSON]
+2021-11-28 21:44:35,971 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:44:35,972 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:44:35,973 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 21:44:35,974 INFO [MAIN][SEND][JSON]
+2021-11-28 21:44:36,026 INFO [MAIN][SEND] to get balance
+2021-11-28 21:45:26,530 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:45:26,531 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 161, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:45:26,532 INFO [MAIN][SEND][END JSON]
+2021-11-28 21:45:46,708 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:45:46,709 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:45:46,710 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 21:45:46,710 INFO [MAIN][SEND][JSON]
+2021-11-28 21:45:46,755 INFO [MAIN][SEND] to get balance
+2021-11-28 21:46:10,739 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:46:10,740 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 21:46:10,741 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:46:10,741 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:46:10,784 INFO [MAIN][BALANCE] to get balance
+2021-11-28 21:46:14,031 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:46:14,031 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 161, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:46:14,033 INFO [MAIN][SEND][END JSON]
+2021-11-28 21:46:18,196 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:46:24,141 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:46:24,142 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:46:24,143 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 21:46:24,144 INFO [MAIN][SEND][JSON]
+2021-11-28 21:46:24,187 INFO [MAIN][SEND] to get balance
+2021-11-28 21:47:18,030 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:47:18,031 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:47:18,032 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 21:47:18,033 INFO [MAIN][SEND][JSON]
+2021-11-28 21:47:18,092 INFO [MAIN][SEND] to get balance
+2021-11-28 21:47:50,078 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:47:50,079 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 161, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:47:50,081 INFO [MAIN][SEND][END JSON]
+2021-11-28 21:49:34,271 INFO <<----------------------------------------------------->>
+2021-11-28 21:49:34,271 INFO  WALLET Log start 
+
+2021-11-28 21:49:49,751 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:49:49,753 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:49:49,753 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 21:49:49,754 INFO [MAIN][SEND][JSON]
+2021-11-28 21:49:49,918 INFO [MAIN][SEND] to get balance
+2021-11-28 21:49:56,297 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:49:56,299 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 21:49:56,299 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:49:56,300 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:49:56,345 INFO [MAIN][BALANCE] to get balance
+2021-11-28 21:50:08,960 INFO [MAIN][SEND][BALANCE] 33100.0000000000 - 0.00033100 tBTC - 16210000000000.0000000000
+2021-11-28 21:50:10,780 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:50:10,781 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 162, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:50:10,786 INFO [MAIN][SEND][END JSON]
+2021-11-28 21:50:42,747 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:52:08,466 INFO <<----------------------------------------------------->>
+2021-11-28 21:52:08,466 INFO  WALLET Log start 
+
+2021-11-28 21:52:14,486 INFO <<----------------------------------------------------->>
+2021-11-28 21:52:14,487 INFO  WALLET Log start 
+
+2021-11-28 21:52:18,286 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:52:18,287 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 21:52:18,289 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:52:18,290 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:52:18,440 INFO [MAIN][BALANCE] to get balance
+2021-11-28 21:52:23,744 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:52:23,745 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:52:23,746 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 21:52:23,746 INFO [MAIN][SEND][JSON]
+2021-11-28 21:52:23,881 INFO [MAIN][SEND] to get balance
+2021-11-28 21:52:49,393 INFO [MAIN][SEND][BALANCE] 33100.00000000 - 0.00033100 tBTC - 0.00000000
+2021-11-28 21:53:11,439 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:57:32,896 INFO <<----------------------------------------------------->>
+2021-11-28 21:57:32,896 INFO  WALLET Log start 
+
+2021-11-28 21:57:46,318 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:57:46,319 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:57:46,320 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 21:57:46,321 INFO [MAIN][SEND][JSON]
+2021-11-28 21:57:46,481 INFO [MAIN][SEND] to get balance
+2021-11-28 21:58:09,385 INFO [MAIN][SEND][BALANCE] 33100.00000000 - 0.00033100 tBTC - 162100.00000000
+2021-11-28 21:58:11,038 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:58:11,038 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 162, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:58:11,045 INFO [MAIN][SEND][END JSON]
+2021-11-28 21:58:11,521 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:58:11,524 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 21:58:11,525 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:58:11,525 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 21:58:11,574 INFO [MAIN][BALANCE] to get balance
+2021-11-28 21:58:17,927 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 21:58:26,389 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:58:26,390 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:58:26,390 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 21:58:26,391 INFO [MAIN][SEND][JSON]
+2021-11-28 21:58:26,434 INFO [MAIN][SEND] to get balance
+2021-11-28 21:58:56,790 INFO [MAIN][SEND][BALANCE] 33100.00000000 - 0.00033100 tBTC - 159000.00000000
+2021-11-28 21:58:58,361 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:58:58,361 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 162, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-28 21:58:58,361 INFO [MAIN][SEND][END JSON]
+2021-11-28 21:59:10,033 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 21:59:10,034 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 21:59:10,035 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 21:59:10,036 INFO [MAIN][SEND][JSON]
+2021-11-28 21:59:10,087 INFO [MAIN][SEND] to get balance
+2021-11-28 21:59:14,916 INFO [MAIN][SEND][BALANCE] 33100.00000000 - 0.00033100 tBTC - 3100.00000000
+2021-11-28 22:00:38,158 INFO <<----------------------------------------------------->>
+2021-11-28 22:00:38,158 INFO  WALLET Log start 
+
+2021-11-28 22:00:56,805 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 22:00:56,806 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-28 22:00:56,806 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 22:00:56,807 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-28 22:00:56,978 INFO [MAIN][BALANCE] to get balance
+2021-11-28 22:01:11,955 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-28 22:01:11,957 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-28 22:01:11,958 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-28 22:01:11,958 INFO [MAIN][SEND][JSON]
+2021-11-28 22:01:12,099 INFO [MAIN][SEND] to get balance
+2021-11-28 22:01:12,537 INFO [MAIN][BALANCE][END JSON]
+2021-11-28 22:01:15,789 INFO [MAIN][SEND][BALANCE] BAL:33100.00000000 - STR:0.00033100 tBTC - PROVIDERS:162100.00000000
+2021-11-28 22:01:16,716 INFO [FNT][CREATE WALLET][GUARDADA] 
+2021-11-29 21:54:38,384 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 21:54:38,392 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-29 21:54:38,394 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 21:54:38,395 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 21:54:38,535 INFO [MAIN][BALANCE] to get balance
+2021-11-29 21:55:19,672 INFO [MAIN][BALANCE][END JSON]
+2021-11-29 22:13:43,769 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 22:13:43,770 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-29 22:13:43,771 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:13:43,771 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:13:43,813 INFO [MAIN][BALANCE] to get balance
+2021-11-29 22:14:03,611 INFO [MAIN][BALANCE][END JSON]
+2021-11-29 22:14:31,947 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 22:14:31,947 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-29 22:14:31,948 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:14:31,949 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:14:31,997 INFO [MAIN][BALANCE] to get balance
+2021-11-29 22:15:10,709 INFO [MAIN][BALANCE][END JSON]
+2021-11-29 22:15:20,240 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 22:15:20,241 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-29 22:15:20,242 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:15:20,243 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:15:20,288 INFO [MAIN][BALANCE] to get balance
+2021-11-29 22:15:33,695 INFO [MAIN][BALANCE][END JSON]
+2021-11-29 22:15:45,319 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 22:15:45,321 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-29 22:15:45,321 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-29 22:15:45,321 INFO [MAIN][SEND][JSON]
+2021-11-29 22:15:45,368 INFO [MAIN][SEND] to get balance
+2021-11-29 22:16:08,856 INFO [MAIN][SEND][BALANCE] BAL:22356.00000000 - STR:0.00022356 tBTC - PROVIDERS:151356.00000000
+2021-11-29 22:16:15,313 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-29 22:16:15,313 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 162, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-29 22:16:15,408 INFO [MAIN][SEND][END JSON]
+2021-11-29 22:16:19,317 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 22:16:19,319 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-29 22:16:19,319 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-29 22:16:19,320 INFO [MAIN][SEND][JSON]
+2021-11-29 22:16:19,359 INFO [MAIN][SEND] to get balance
+2021-11-29 22:16:31,027 INFO [MAIN][SEND][BALANCE] BAL:22356.00000000 - STR:0.00022356 tBTC - PROVIDERS:0.00000000
+2021-11-29 22:16:44,200 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 22:16:44,202 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-29 22:16:44,202 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-29 22:16:44,203 INFO [MAIN][SEND][JSON]
+2021-11-29 22:16:44,249 INFO [MAIN][SEND] to get balance
+2021-11-29 22:17:25,905 INFO [MAIN][SEND][BALANCE] BAL:22356.00000000 - STR:0.00022356 tBTC - PROVIDERS:151356.00000000
+2021-11-29 22:17:27,314 ERROR [MAIN][SEND][ENVIO] Error enviando , error: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-29 22:17:27,314 ERROR No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+Traceback (most recent call last):
+  File "C:\Users\gabat\Documents\Plan E\Code\wallet\BTC\testbtc.py", line 162, in txExecutionSend
+    tx=w.send_to(address_destination, amount)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 3855, in send
+    transaction.send(offline)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\wallets.py", line 776, in send
+    res = srv.sendrawtransaction(self.raw_hex())
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 429, in sendrawtransaction
+    return self._provider_execute('sendrawtransaction', rawtx)
+  File "C:\Users\gabat\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\bitcoinlib\services\services.py", line 214, in _provider_execute
+    raise ServiceError("No successful response from any serviceprovider: %s" % list(self.providers.keys()))
+bitcoinlib.services.services.ServiceError: No successful response from any serviceprovider: ['bitgo.testnet', 'blockchair.testnet', 'bitaps.testnet', 'blockstream.testnet', 'chainso.testnet']
+2021-11-29 22:17:27,316 INFO [MAIN][SEND][END JSON]
+2021-11-29 22:17:30,018 INFO [MAIN][SEND][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 22:17:30,020 INFO -----------[SEND][INICIANDO POST]-----------
+2021-11-29 22:17:30,021 INFO [MAIN][SEND][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+},
+
+"address_destination":"mwoZj2Gr7i5UcjYx8YKajnUPJ67Tkejte1",
+
+"amount":0.00010000
+
+}
+2021-11-29 22:17:30,022 INFO [MAIN][SEND][JSON]
+2021-11-29 22:17:30,080 INFO [MAIN][SEND] to get balance
+2021-11-29 22:17:34,540 INFO [MAIN][SEND][BALANCE] BAL:22356.00000000 - STR:0.00022356 tBTC - PROVIDERS:151356.00000000
+2021-11-29 22:17:40,149 INFO [FNT][CREATE WALLET][GUARDADA] 
+2021-11-29 22:18:19,904 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 22:18:19,905 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-29 22:18:19,905 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:18:19,906 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:18:19,953 INFO [MAIN][BALANCE] to get balance
+2021-11-29 22:18:43,745 INFO [MAIN][BALANCE][END JSON]
+2021-11-29 22:19:29,072 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 22:19:29,074 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-29 22:19:29,074 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:19:29,075 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:19:29,119 INFO [MAIN][BALANCE] to get balance
+2021-11-29 22:20:03,140 INFO [MAIN][BALANCE][END JSON]
+2021-11-29 22:21:07,060 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-29 22:21:07,061 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-29 22:21:07,062 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:21:07,062 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest6",
+
+  "account":"testAccount"
+
+}}
+2021-11-29 22:21:07,107 INFO [MAIN][BALANCE] to get balance
+2021-11-29 22:21:12,339 INFO [MAIN][BALANCE][END JSON]
+2021-11-30 23:26:14,011 INFO [MAIN][BALANCE][REQUEST][IP ORIGIN] allowed with ip: 127.0.0.1
+2021-11-30 23:26:14,021 INFO -----------[BALANCE][INICIANDO GET]-----------
+2021-11-30 23:26:14,023 INFO [MAIN][BALANCE][MESSAGE] Content: {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-30 23:26:14,024 INFO [MAIN][BALANCE][JSON] {"wallet": {
+
+  "id": "file",
+
+  "network": "testnet",
+
+  "name":"walletTest7",
+
+  "account":"testAccount"
+
+}}
+2021-11-30 23:26:14,634 INFO [MAIN][BALANCE] to get balance
+2021-11-30 23:26:54,985 INFO [MAIN][BALANCE][END JSON]
